@@ -1,0 +1,106 @@
+.Hero {
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.Hero__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.Hero__left {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.Hero__title {
+    max-width: 555px;
+    color: #150C01;
+    font-family: Philosopher;
+    font-size: 48.83px;
+    font-weight: 700;
+    line-height: 57.6px;
+}
+
+.Hero__text {
+    max-width: 555px;
+    color: #150C01;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.Hero__btns {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.Hero__btn {
+    border-radius: 5px;
+    border: 1.5px solid #DC780B;
+    background-color: transparent;
+    color: #DC780B;
+    padding: 20px 40px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    transition: all 0.3s ease-in-out;
+}
+
+.Hero__btn:hover {
+    border-color: #DC780B;
+    background-color: #DC780B;
+    color: #fff;
+}
+
+.Hero__right img {
+    width: 100%;
+}
+
+@media (max-width: 1186px) {
+    .Hero__title {
+        font-size: 43px;
+    }
+
+    .Hero__text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1032px) {
+    .Hero__title {
+        font-size: 37px;
+    }
+
+    .Hero__text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 870px) {
+    .Hero__container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .Hero__btns {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 450px) {
+    .Hero__title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .Hero__text {
+        font-size: 11px;
+        line-height: 18px;
+    }
+}

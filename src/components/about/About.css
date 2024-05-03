@@ -1,0 +1,92 @@
+.About {
+    padding: 55px 0;
+}
+
+.About__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 98px;
+}
+
+.About__left img {
+    width: 100%;
+}
+
+.About__right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.About__text {
+    color: #DC780B;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.About__title {
+    max-width: 487px;
+    color: #150C01;
+    font-family: Philosopher;
+    font-size: 31.25px;
+    font-weight: 700;
+    line-height: 40.63px;
+}
+
+.About__desc {
+    max-width: 487px;
+    color: #150C01;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.About__btn {
+    border: 1px solid #DC780B;
+    border-radius: 5px;
+    background-color: #DC780B;
+    padding: 13px 30px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    transition: all .3s ease-in-out;
+}
+
+.About__btn:hover {
+    background-color: transparent;
+    color: #DC780B;
+}
+
+@media (max-width: 1000px) {
+    .About__title {
+        font-size: 27px;
+    }
+
+    .About__desc {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 835px) {
+    .About__container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 450px) {
+    .About__title {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .About__desc {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
